@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: app-logs-pvc
+  namespace: ivolve
+spec:
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteMany
